@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.img{
+    margin: 20px;
+    padding-top: 10px;
+}
+body{
+    background-color:#a1c6e6;
+    color: black;
+    height: 100vh;
+    margin: 8%;
+    box-sizing: border-box;
+    
+}
+input{
+    width: 30%;
+    background-color: transparent;
+    color: rebeccapurple;
+    font-weight: bold;
+
+}
+button{
+    background-color: black;
+    color: azure;
+    border-radius: 8px;
+    border-color: transparent ;
+    font-weight: bold;
+    display: flex;
+    justify-content:flex-end;
+}
+.vagas_tabela{
+    display: flex;
+    align-content: center;
+}
+.corpo{
+    display:flex;
+    flex-direction: column;
+     
+         
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Reserva de Vaga</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<header></header>
+<body class="corpo">
+    <img class="img"  src="pre.png" alt="condominio" width="10%" height="auto">
+    <h1>Cadastro de Reserva de Vaga</h1>
+    <form id="cadastroForm">
+        
+        <label for="nome">Nome do Proprietário:</label>
+        <input type="text" id="nome" required><br>
+
+        <label for="apartamento">Número do Apartamento:</label>
+        <input type="number" id="apartamento" required><br>
+
+        <label for="bloco">Bloco do Apartamento:</label>
+        <input type="text" id="bloco" required><br>
+
+        <label for="placa">Placa do Veículo:</label>
+        <input type="text" id="placa" required><br>
+
+        <label for="modelo">Modelo do Veículo:</label>
+        <input type="text" id="modelo" required><br>
+
+        <label for="cor">Cor do Veículo:</label>
+        <input type="text" id="cor" required><br>
+
+        <label for="numeroVaga">Número da Vaga de Estacionamento:</label>
+        <input type="number" id="numeroVaga" required><br>
+        <div>
+            <button type="button" id="submitButton">Cadastrar Reserva</button>
+        </div>
+    </form>
+
+<script>
+    //     Inicializar uma matriz vazia para armazenar dados de formulário
+    let formDataArray = [];
+
+    //   Função para manipular o envio de formulários
+    function handleSubmit(event) {
+        event.preventDefault(); // Impedir o comportamento padrão de envio de formulário
+
+        // Obter valores de entrada de formulário
+        const nome = document.getElementById("nome").value;
+        const apartamento = document.getElementById("apartamento").value;
+        const bloco = document.getElementById("bloco").value;
+        const placa = document.getElementById("placa").value;
+        const modelo = document.getElementById("modelo").value;
+        const cor = document.getElementById("cor").value;
+        const numeroVaga = document.getElementById("numeroVaga").value;
+
+        // Criar um objeto com dados de formulário
+        const formData = {
+            nome,
+            apartamento,
+            bloco,
+            placa,
+            modelo,
+            cor,
+            numeroVaga
+        };
+
+        // Adicionar o objeto de dados do formulário à matriz
+        formDataArray.push(formData);
+
+        // Registrar os dados do formulário no console
+        console.log(formData);
+
+        // Display a confirmation message in a pop-up
+        alert("Cadastro realizado com sucesso!");
+
+        // Limpar os campos de formulário
+        document.getElementById("cadastroForm").reset();
+    }
+
+    // Add um ouvinte de eventos Click para o botão Enviar
+    document.getElementById("submitButton").addEventListener("click", handleSubmit);
+</script>
+
+</body>
+<footer></footer>
+</html>

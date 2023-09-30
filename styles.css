@@ -1,0 +1,30 @@
+.preto{
+    background-color: black;
+    color: antiquewhite;
+    padding-right: 50px;
+}
+.cin{
+    background-color: cadetblue;
+    color: black;
+    padding-right: 30px;
+}
+
+.proprie{
+    padding-right: 90px;
+
+}
+.tabela{
+    background-color: DimGray;
+}
+body{
+    background-color:#a1c6e6;
+    height: 100vh;
+    margin: 8%;
+    box-sizing: border-box;
+}
+.lis{
+
+}
+.listra{
+    background-color: Gainsboro;
+}
